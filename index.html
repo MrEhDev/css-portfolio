@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">adamkeyes</a>
+      <a href="#contact" class="contact-link">Contact Me</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero__content">
+      <h1>Nice to meet you!<br> I’m <span>Adam Keyes.</span></h1>
+      <p>
+        Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
+      </p>
+      <a href="#projects" class="btn">Projects</a>
+    </div>
+    <div class="hero__image">
+      <img src="images/profile.jpg" alt="Adam Keyes portrait">
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <ul class="skills__list">
+      <li><h3>HTML</h3><p>4 Years Experience</p></li>
+      <li><h3>CSS</h3><p>4 Years Experience</p></li>
+      <li><h3>JavaScript</h3><p>4 Years Experience</p></li>
+      <li><h3>Accessibility</h3><p>4 Years Experience</p></li>
+      <li><h3>React</h3><p>3 Years Experience</p></li>
+      <li><h3>Sass</h3><p>3 Years Experience</p></li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects__header">
+      <h2>Projects</h2>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div class="projects__grid">
+      <!-- Proyecto 1 -->
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Design Portfolio">
+        <h3>DESIGN PORTFOLIO</h3>
+        <p>HTML CSS</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="E-learning landing page">
+        <h3>E-LEARNING LANDING PAGE</h3>
+        <p>HTML CSS</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Todo Web App">
+        <h3>TODO WEB APP</h3>
+        <p>HTML CSS JavaScript</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+      <!-- Proyecto 4 -->
+      <div class="project-card">
+        <img src="images/project4.jpg" alt="Entertainment Web App">
+        <h3>ENTERTAINMENT WEB APP</h3>
+        <p>HTML CSS JavaScript</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+      <!-- Proyecto 5 -->
+      <div class="project-card">
+        <img src="images/project5.jpg" alt="Memory Game">
+        <h3>MEMORY GAME</h3>
+        <p>HTML CSS JavaScript</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+      <!-- Proyecto 6 -->
+      <div class="project-card">
+        <img src="images/project6.jpg" alt="Art Gallery Showcase">
+        <h3>ART GALLERY SHOWCASE</h3>
+        <p>HTML CSS JavaScript</p>
+        <div class="project-links">
+          <a href="#">View Project</a>
+          <a href="#">View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__text">
+      <h2>Contact</h2>
+      <p>
+        I would love to hear about your project and how I could help.
+        Please fill in the form, and I’ll get back to you as soon as possible.
+      </p>
+    </div>
+    <form class="contact__form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="NAME" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="EMAIL" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="MESSAGE" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="#" class="logo">adamkeyes</a>
+    <div class="footer__links">
+      <a href="#"><img src="images/icon-github.svg" alt="Github"></a>
+      <a href="#"><img src="images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a>
+      <a href="#"><img src="images/icon-linkedin.svg" alt="Linkedin"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+    </div>
+  </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+body {
+  font-family: $font-body;
+  color: $c-ink;
+  background: $c-bg;
+}
+
+
+/* Tipografías */
+.h-xl { 
+  font-family: $font;
+  color: $c-ink-title;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  @include respond(md) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  @include respond(lg) {
+    font-size: 88px;
+    line-height: 88px;
+  }
+}
+
+.h-m {
+  font-family: $font;
+  color: $c-ink-title;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.h-s{
+  font-family: $font-heading;
+  color: $c-ink-title;
+  font-size: 16px;
+  line-height: 26px; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.body {
+  font-family: $font;
+  color: $c-ink;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  @include respond(lg) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
