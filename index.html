@@ -13,143 +13,225 @@
   </head>
   <body>
       <!-- HEADER -->
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#" class="logo">adamkeyes</a>
-      <a href="#contact" class="contact-link">Contact Me</a>
-    </nav>
-  </header>
+    <header class="site-header">
+      <div class="header__decor">
+        <div class="oval oval--1"></div>
+        <div class="oval oval--2"></div>
+        <div class="oval oval--3"></div>
+        <div class="oval oval--4"></div>
+        <div class="oval oval--5"></div>
+        <div class="circle circle--1"></div>
+      </div>
+      <nav class="navbar">
+        <a href="#" class="logo h-m">adamkeyes</a>
+        <div class="networks__links">
+          <a href="#"><img src="github.svg" alt="Github"></a>
+          <a href="#"><img src="frontendmentor.svg" alt="Frontend Mentor"></a>
+          <a href="#"><img src="linkedin.svg" alt="Linkedin"></a>
+          <a href="#"><img src="x.svg" alt="Twitter"></a>
+        </div>
+      </nav>
+      <div class="header__image">
+        <img src="profile.svg" alt="Adam Keyes">
+      </div>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero__content">
-      <h1>Nice to meet you!<br> I’m <span>Adam Keyes.</span></h1>
-      <p>
-        Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
-      </p>
-      <a href="#projects" class="btn">Projects</a>
-    </div>
-    <div class="hero__image">
-      <img src="images/profile.jpg" alt="Adam Keyes portrait">
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero__content">
+        <h1 class="title h-xl">Nice to meet you!<br> I’m <span class="atencion">Adam Keyes.</span></h1>
+        <p class="body">
+          Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <ul class="skills__list">
-      <li><h3>HTML</h3><p>4 Years Experience</p></li>
-      <li><h3>CSS</h3><p>4 Years Experience</p></li>
-      <li><h3>JavaScript</h3><p>4 Years Experience</p></li>
-      <li><h3>Accessibility</h3><p>4 Years Experience</p></li>
-      <li><h3>React</h3><p>3 Years Experience</p></li>
-      <li><h3>Sass</h3><p>3 Years Experience</p></li>
-    </ul>
-  </section>
+    <!-- SKILLS -->
+    <section class="skills">
+      <div class="skills__decoration"></div>
+      <ul class="skills__list">
+        <li><h3 class="h-m">HTML</h3>
+          <p class="body">4 Years Experience</p></li>
+        <li><h3 class="h-m">CSS</h3>
+          <p class="body">4 Years Experience</p></li>
+        <li><h3 class="h-m">JavaScript</h3>
+          <p class="body">4 Years Experience</p></li>
+        <li><h3 class="h-m">Accessibility</h3>
+          <p class="body">4 Years Experience</p></li>
+        <li><h3 class="h-m">React</h3>
+          <p class="body">3 Years Experience</p></li>
+        <li><h3 class="h-m">Sass</h3>
+          <p class="body">3 Years Experience</p></li>
+      </ul>
+      <div class="skills__decoration skills__decoration__2"></div>
+      <div class="skills__decor_2">
+        <div class="oval oval--1"></div>
+        <div class="oval oval--2"></div>
+        <div class="oval oval--3"></div>
+        <div class="oval oval--4"></div>
+        <div class="oval oval--5"></div>
+        <div class="circle circle--1"></div>
+      </div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="projects__header">
-      <h2>Projects</h2>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="projects__header">
+        <h2 class="h-xl">Projects</h2>
+        <a href="#contact" class="btn h-s">Contact Me</a>
+      </div>
 
-    <div class="projects__grid">
-      <!-- Proyecto 1 -->
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="Design Portfolio">
-        <h3>DESIGN PORTFOLIO</h3>
-        <p>HTML CSS</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
+      <div class="projects__grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+          <img src="project1.png" alt="Design Portfolio">
+          <h3 class="h-m">DESIGN PORTFOLIO</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <img src="project2.png" alt="E-learning landing page">
+          <h3 class="h-m">E-LEARNING LANDING PAGE</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <img src="project3.png" alt="Todo Web App">
+          <h3 class="h-m">TODO WEB APP</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+            <p class="body language">JavaScript</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="project-card">
+          <img src="project4.png" alt="Entertainment Web App">
+          <h3 class="h-m">ENTERTAINMENT WEB APP</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+            <p class="body language">JavaScript</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="project-card">
+          <img src="project5.png" alt="Memory Game">
+          <h3 class="h-m">MEMORY GAME</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+            <p class="body language">JavaScript</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="project-card">
+          <img src="project6.png" alt="Art Gallery Showcase">
+          <h3 class="h-m">ART GALLERY SHOWCASE</h3>
+          <div class="languages">
+            <p class="body language">HTML</p>
+            <p class="body language">CSS</p>
+            <p class="body language">JavaScript</p>
+          </div>
+          <div class="overlay">
+            <div class="project-links">
+              <a href="#" class="btn h-s">View Project</a>
+              <a href="#" class="btn h-s">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Proyecto 2 -->
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="E-learning landing page">
-        <h3>E-LEARNING LANDING PAGE</h3>
-        <p>HTML CSS</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
-        </div>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="project-card">
-        <img src="images/project3.jpg" alt="Todo Web App">
-        <h3>TODO WEB APP</h3>
-        <p>HTML CSS JavaScript</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
-        </div>
-      </div>
-      <!-- Proyecto 4 -->
-      <div class="project-card">
-        <img src="images/project4.jpg" alt="Entertainment Web App">
-        <h3>ENTERTAINMENT WEB APP</h3>
-        <p>HTML CSS JavaScript</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
-        </div>
-      </div>
-      <!-- Proyecto 5 -->
-      <div class="project-card">
-        <img src="images/project5.jpg" alt="Memory Game">
-        <h3>MEMORY GAME</h3>
-        <p>HTML CSS JavaScript</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
-        </div>
-      </div>
-      <!-- Proyecto 6 -->
-      <div class="project-card">
-        <img src="images/project6.jpg" alt="Art Gallery Showcase">
-        <h3>ART GALLERY SHOWCASE</h3>
-        <p>HTML CSS JavaScript</p>
-        <div class="project-links">
-          <a href="#">View Project</a>
-          <a href="#">View Code</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="contact__text">
-      <h2>Contact</h2>
-      <p>
-        I would love to hear about your project and how I could help.
-        Please fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-    </div>
-    <form class="contact__form">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="NAME" required>
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="EMAIL" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="MESSAGE" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <a href="#" class="logo">adamkeyes</a>
-    <div class="footer__links">
-      <a href="#"><img src="images/icon-github.svg" alt="Github"></a>
-      <a href="#"><img src="images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a>
-      <a href="#"><img src="images/icon-linkedin.svg" alt="Linkedin"></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-    </div>
-  </footer>
-    <script type="module" src="/src/main.js"></script>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__text">
+        <h2 class="h-xl">Contact</h2>
+        <p>
+          I would love to hear about your project and how I could help.
+          Please fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+      </div>
+      <form class="contact__form" id="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="NAME" required>
+          <span class="error-message" id="error-name"></span>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="EMAIL" required>
+          <span class="error-message" id="error-email"></span>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="MESSAGE" required></textarea>
+          <span class="error-message" id="error-message"></span>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="footer__decor">
+        <div class="oval oval--1"></div>
+        <div class="oval oval--2"></div>
+        <div class="oval oval--3"></div>
+        <div class="oval oval--4"></div>
+        <div class="oval oval--5"></div>
+        <div class="circle circle--1"></div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="skills__decoration line"></div>
+      <a href="#" class="logo h-m">adamkeyes</a>
+      <div class="networks__links">
+        <a href="#"><img src="github.svg" alt="Github"></a>
+        <a href="#"><img src="frontendmentor.svg" alt="Frontend Mentor"></a>
+        <a href="#"><img src="linkedin.svg" alt="Linkedin"></a>
+        <a href="#"><img src="x.svg" alt="Twitter"></a>
+      </div>
+    </footer>
+      <script src="form.js"></script>
+      <script type="module" src="/src/main.js"></script>
   </body>
 </html>

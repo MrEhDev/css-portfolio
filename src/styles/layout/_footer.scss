@@ -1,2 +1,17 @@
 @use '../variables' as *;
 @use '../mixins' as *;
+
+.site-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    .logo{
+      margin-bottom: 20px;
+    }
+  padding-bottom: 60px;
+  .skills__decoration{
+    margin-top: 47px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,11 @@
+.networks__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 154px;
+  img{ 
+    width: 20px;
+    height: 20px;
+  }
+}

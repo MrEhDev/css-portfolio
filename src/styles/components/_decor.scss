@@ -1,0 +1,107 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.header__decor {
+  z-index: -1;
+  .oval{
+    width: 530px;
+    height: 80px;
+    background: none;
+    border: 1px solid $c-ink-title;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    left: -460px;
+
+    &--1{
+      top: 124px;
+    }
+    &--2{
+      top: 136px;
+    }
+    &--3{
+      top: 148px;
+    }
+    &--4{
+      top: 160px;
+    }
+    &--5{
+      top: 172px;
+    }
+  }
+  .circle{
+    width: 129px;
+    height: 129px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid $c-ink;
+    position: absolute;
+    &--1{
+      top: 254px;
+      right: -190px; 
+    }
+  }
+}
+
+
+.skills__decor_2 {
+  z-index: -1;
+  position: relative;
+  margin-top: 0px;
+  .oval{
+    width: 530px;
+    height: 80px;
+    background: none;
+    border: 1px solid $c-ink-title;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+
+    &--1{
+      top: -65px;
+    }
+    &--2{
+      top: -53px;
+    }
+    &--3{
+      top: -41px;
+    }
+    &--4{
+      top: -29px;
+    }
+    &--5{
+      top: -17px;
+    }
+  }
+}
+
+.footer__decor {
+  z-index: -1;
+  .oval{
+    width: 530px;
+    height: 80px;
+    background: none;
+    border: 1px solid $c-ink-title;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    left: -300px;
+
+    &--1{
+      top: 430px;
+    }
+    &--2{
+      top: 442px;
+    }
+    &--3{
+      top: 454px;
+    }
+    &--4{
+      top: 466px;
+    }
+    &--5{
+      top: 478px;
+    }
+  }
+}

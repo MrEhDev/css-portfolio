@@ -2,7 +2,7 @@
 @use '../mixins' as *;
 
 body {
-  font-family: $font-body;
+  font-family: $font;
   color: $c-ink;
   background: $c-bg;
 }
@@ -31,11 +31,11 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  text-transform: uppercase;
-}
+/*   text-transform: uppercase;
+ */}
 
 .h-s{
-  font-family: $font-heading;
+  font-family: $font;
   color: $c-ink-title;
   font-size: 16px;
   line-height: 26px; 
@@ -46,8 +46,8 @@ body {
 .body {
   font-family: $font;
   color: $c-ink;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 500;
   @include respond(lg) {
     font-size: 22px;

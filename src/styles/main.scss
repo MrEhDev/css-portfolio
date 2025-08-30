@@ -4,6 +4,10 @@
 @use 'base/typography';
 @use 'base/globals';
 @use 'components/buttons';
+/* @use 'components/form'; */
+@use 'components/decor';
+@use 'components/networks';
+@use 'layout/projects';
+@use 'layout/contact';
 @use 'layout/footer';
 @use 'pages/home';
-@use 'pages/location';
