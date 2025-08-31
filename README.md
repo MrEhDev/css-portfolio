@@ -84,6 +84,6 @@ npm run preview
 ## 🚀 Deploy
 
 El proyecto está publicado en **GitHub Pages**:  
-👉 [Ver demo en vivo](https://MrEhDev.github.io/CSS-Tarea-entregable-4-Portfolio/)
+👉 [Ver demo en vivo](https://mrehdev.github.io/css-portfolio/)
 
 ---
