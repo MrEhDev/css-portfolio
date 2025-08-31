@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio - Proyecto entregable
 
 Este proyecto es la entrega del **Tarea entregable – Portfolio** del máster Full Stack.  
 El objetivo es reproducir el diseño de un portfolio personal a partir de un archivo de **Figma** con un layout **responsive** y buenas prácticas en semántica, accesibilidad y organización del código.
