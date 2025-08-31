@@ -13,6 +13,12 @@ body{
   position: relative;
   background: linear-gradient(180deg, transparent 0%, $c-muted 100%);
   width: 174px;
+/* 📔 */
+  @include respond(md){
+    width: 100dvw;
+    background: transparent;
+    
+  }
     .navbar{
     display: flex;
     flex-direction: column;
@@ -21,20 +27,108 @@ body{
     padding: 16px 0;
     margin-bottom: 40px;
 
+  /* 📔 */
+    @include respond(md){
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100dvw;
+      margin: 0;
+      padding: 29px 32px;
+    }
+
     .logo{
       margin-bottom: 20px;
     }
   }
+
   .header__image{
     display: flex;
     justify-content: center;
+    /* 📔 */
+    @include respond(md){
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      background-color: $c-muted;
+      width: 322px;
+      height: 587px;
+      top: 0;
       img{
         width: 174px;
         height: 242px;
         z-index: 2;
+
+        @include respond(md){
+          position: absolute;
+          width: 349px;
+          height: 486px;
+          top: 120px;
+          border: 0;
+          z-index: -2;
+        }
       }
     }
+  }
+
+  
 }
+
+.hero{
+  @include respond(md){
+    display: flex;
+    max-width: 100dvw;
+    width: 100dvw;
+  }
+  .hero__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 25px;
+
+    @include respond(md){
+      max-width: 445px;
+      text-align: left;
+      margin: 0;
+      padding: 0 32px;
+      align-items: flex-start;
+      justify-content: left;
+    }
+
+    h1{
+      margin-bottom: 16px;
+      .tablet-only{
+        display: none;
+      }
+      @include respond(md){
+        margin-top: 40px;
+        margin-bottom: 60px;
+        .tablet-only{
+          display: inline;
+        }
+      }
+    }
+
+    p{
+      @include respond(md){
+        margin-bottom: 34px;
+      }
+    }
+
+    span{
+      text-decoration-line: underline;
+      text-decoration-color: $c-accent;
+      text-underline-offset: 8px;
+
+      @include respond(md){
+        text-underline-offset: 15px;
+      }
+    }
+  }
+}
+
 
 
 .projects__grid{
@@ -58,57 +152,60 @@ body{
   }
 }
 
-.hero__content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 25px;
-  h1{
-    margin-bottom: 16px;
-  }
-
-  span{
-    text-decoration-line: underline;
-    text-decoration-color: $c-accent;
-    text-underline-offset: 8px;
-  }
-
-}
 
 .skills{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0px 16px;
 
   &__decoration{
     margin-top: 80px;
+    margin-bottom: 40px;
     border-top: 1px solid $c-ink;
     width: 95dvw;
   }
 
   &__decoration__2{
     margin-top: 40px;
+    @include respond(md){
+      display: none;
+    }
   }
 
   ul{
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 20px;
+    gap: 24px;
+    @include respond(md){
+      grid-template-columns: repeat(2, 1fr);
+      gap: 52px;
+      max-width: 708 px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
 
     li{
       list-style: none;
       text-align: center;
-      margin-top: 24px;
+      @include respond(md){
+        text-align: left;
+      }
       h3{
         margin: 0px;
+        @include respond(md){
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -1.5px;
+        }
       }
       p{
         margin: 0;
         margin-top: 1px;
+        @include respond(md){
+          margin-top: 14px;
+        }
       }
     }
   }

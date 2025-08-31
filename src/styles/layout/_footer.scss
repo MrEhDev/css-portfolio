@@ -6,12 +6,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
     .logo{
       margin-bottom: 20px;
+      @include respond(md){
+        font-size: 32px;
+        letter-spacing: -0.44px;
+      }
     }
-  padding-bottom: 60px;
-  .skills__decoration{
-    margin-top: 47px;
-    margin-bottom: 40px;
+    @include respond(md){
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 92%;
+      margin: 0;
+      padding: 0px 32px 32px 32px;
+    }
+}
+
+.skills__decorationfoot{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border-top: 1px solid $c-ink;
+  width: 95dvw;
+  @include respond(md){
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }

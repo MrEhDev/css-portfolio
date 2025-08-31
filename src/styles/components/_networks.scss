@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .networks__links {
   display: flex;
   justify-content: space-between;
@@ -7,5 +10,9 @@
   img{ 
     width: 20px;
     height: 20px;
+    @include respond(md){
+      width: 24px;
+      height: 24px;
+    }
   }
 }

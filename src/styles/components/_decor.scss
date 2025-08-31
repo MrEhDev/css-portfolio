@@ -2,33 +2,25 @@
 @use '../mixins' as *;
 
 .header__decor {
-  z-index: -1;
-  .oval{
-    width: 530px;
-    height: 80px;
-    background: none;
-    border: 1px solid $c-ink-title;
-    border-radius: 50%;
-    opacity: 0.3;
-    position: absolute;
-    left: -460px;
+  position: relative;
 
-    &--1{
-      top: 124px;
-    }
-    &--2{
-      top: 136px;
-    }
-    &--3{
-      top: 148px;
-    }
-    &--4{
-      top: 160px;
-    }
-    &--5{
-      top: 172px;
+  @for $i from 1 through 5 {
+    .oval--#{$i} {
+      width: 530px;
+      height: 80px;
+      border: 1px solid $c-ink-title;
+      border-radius: 50%;
+      opacity: 0.3;
+      position: absolute;
+      left: -460px;
+      top: 124px + (($i - 1) * 12px);
+      @include respond(md){
+        left: -265px;
+        top: 86px + (($i - 1) * 12px);
+      }
     }
   }
+
   .circle{
     width: 129px;
     height: 129px;
@@ -38,7 +30,11 @@
     position: absolute;
     &--1{
       top: 254px;
-      right: -190px; 
+      right: -190px;
+      @include respond(md){
+        right: -72px;
+        top: 456px;
+      }
     }
   }
 }
@@ -48,60 +44,42 @@
   z-index: -1;
   position: relative;
   margin-top: 0px;
-  .oval{
-    width: 530px;
-    height: 80px;
-    background: none;
-    border: 1px solid $c-ink-title;
-    border-radius: 50%;
-    opacity: 0.3;
-    position: absolute;
-    left: 0px;
-
-    &--1{
-      top: -65px;
+  @for $i from 1 through 5 {
+    .oval--#{$i} {
+      width: 530px;
+      height: 80px;
+      background: none;
+      border: 1px solid $c-ink-title;
+      border-radius: 50%;
+      opacity: 0.3;
+      position: absolute;
+      left: 0px;
+      top: -65px + (($i - 1) * 12px);
     }
-    &--2{
-      top: -53px;
-    }
-    &--3{
-      top: -41px;
-    }
-    &--4{
-      top: -29px;
-    }
-    &--5{
-      top: -17px;
-    }
+  }
+  @include respond(md){
+    left: 570px;
   }
 }
 
 .footer__decor {
   z-index: -1;
-  .oval{
-    width: 530px;
-    height: 80px;
-    background: none;
-    border: 1px solid $c-ink-title;
-    border-radius: 50%;
-    opacity: 0.3;
-    position: absolute;
-    left: -300px;
-
-    &--1{
-      top: 430px;
+  position: relative;
+  @for $i from 1 through 5 {
+    .oval--#{$i} {
+      width: 530px;
+      height: 80px;
+      background: none;
+      border: 1px solid $c-ink-title;
+      border-radius: 50%;
+      opacity: 0.3;
+      position: absolute;
+      left: -545px;
+      top: -130px + (($i - 1) * 12px);
     }
-    &--2{
-      top: 442px;
-    }
-    &--3{
-      top: 454px;
-    }
-    &--4{
-      top: 466px;
-    }
-    &--5{
-      top: 478px;
+    @include respond(md){
+      top: 70px;
+      left: -210px;
     }
   }
 }
