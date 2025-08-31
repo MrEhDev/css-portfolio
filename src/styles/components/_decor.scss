@@ -3,7 +3,8 @@
 
 .header__decor {
   position: relative;
-
+  top: 0;
+  left: 0;
   @for $i from 1 through 5 {
     .oval--#{$i} {
       width: 530px;
@@ -14,9 +15,16 @@
       position: absolute;
       left: -460px;
       top: 124px + (($i - 1) * 12px);
+      z-index: -2;
+  /* 📔 */
       @include respond(md){
         left: -265px;
         top: 86px + (($i - 1) * 12px);
+      }
+  /* 💻 */
+      @include respond(lg){
+        left: -260px;
+        top: 115px + (($i - 1) * 12px);
       }
     }
   }
@@ -31,12 +39,19 @@
     &--1{
       top: 254px;
       right: -190px;
+  /* 📔 */
       @include respond(md){
         right: -72px;
         top: 456px;
       }
+  /* 💻 */
+      @include respond(lg){
+        right: 380px;
+        top: 540px;
+      }
     }
   }
+
 }
 
 
@@ -44,6 +59,8 @@
   z-index: -1;
   position: relative;
   margin-top: 0px;
+  top: 0;
+  left: 0;
   @for $i from 1 through 5 {
     .oval--#{$i} {
       width: 530px;
@@ -53,18 +70,27 @@
       border-radius: 50%;
       opacity: 0.3;
       position: absolute;
-      left: 0px;
-      top: -65px + (($i - 1) * 12px);
+      left: 200px;
+      top: -105px + (($i - 1) * 12px);
     }
   }
+/* 📔 */
   @include respond(md){
-    left: 570px;
+    left: 375px;
+    top: 35px;
+  }
+/* 💻 */
+  @include respond(lg){
+    left: 800px;
   }
 }
+
 
 .footer__decor {
   z-index: -1;
   position: relative;
+  top: 100px;
+  left: 0px;
   @for $i from 1 through 5 {
     .oval--#{$i} {
       width: 530px;
@@ -75,11 +101,17 @@
       opacity: 0.3;
       position: absolute;
       left: -545px;
-      top: -130px + (($i - 1) * 12px);
+      top: -290px + (($i - 1) * 12px);
     }
+  /* 📔 */
     @include respond(md){
-      top: 70px;
-      left: -210px;
+      top: 170px;
+      left: -200px;
+    }
+  /* 💻 */
+    @include respond(lg){
+      left: -370px;
+      top: 140px;
     }
   }
 }

@@ -7,12 +7,18 @@
   align-items: center;
   gap: 1.5rem;
   max-width: 154px;
-  img{ 
+  a svg{ 
     width: 20px;
     height: 20px;
+    fill: $c-ink;
+  /* 📔 */
     @include respond(md){
       width: 24px;
       height: 24px;
+    }
+    &:hover{
+      fill: $c-accent;
+      transition: all 0.6s ease-in-out;
     }
   }
 }

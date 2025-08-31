@@ -1,18 +1,16 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-
-  .btn{
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
-    text-decoration-color: $c-accent;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-    &:hover{
-      color: $c-accent;
-      transition-duration: 0.8s;
-    }
+.btn{
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  text-decoration-color: $c-accent;
+  font-weight: bold;
+  letter-spacing: 3px;
+  &:hover{
+    color: $c-accent;
+    transition-duration: 0.8s;
   }
+}

@@ -9,16 +9,21 @@ body{
   overflow-x: hidden;
 }
 
+
 .site-header{
   position: relative;
   background: linear-gradient(180deg, transparent 0%, $c-muted 100%);
   width: 174px;
-/* 📔 */
-  @include respond(md){
-    width: 100dvw;
-    background: transparent;
-    
-  }
+    /* 📔 */
+    @include respond(md){
+      width: 100dvw;
+      background: transparent;
+    }
+    /* 💻 */
+    @include respond(lg){
+      max-width: 1110px;
+    }
+
     .navbar{
     display: flex;
     flex-direction: column;
@@ -26,8 +31,7 @@ body{
     align-items: center;
     padding: 16px 0;
     margin-bottom: 40px;
-
-  /* 📔 */
+    /* 📔 */
     @include respond(md){
       flex-direction: row;
       justify-content: space-between;
@@ -35,9 +39,22 @@ body{
       margin: 0;
       padding: 29px 32px;
     }
+    /* 💻 */
+    @include respond(lg){
+      padding: 30px 24px 0 0;
+    }
 
     .logo{
       margin-bottom: 20px;
+      /* 📔 */
+      @include respond(md){
+        font-size: 32px;
+        letter-spacing: -0.44px;
+      }
+      &:hover{
+        color: $c-accent;
+        transition: all 0.6s ease-in-out;
+      }
     }
   }
 
@@ -53,11 +70,18 @@ body{
       width: 322px;
       height: 587px;
       top: 0;
+      /* 💻 */
+      @include respond(lg){
+        width: 445px;
+        height: 720px;
+        top: 0px;
+      }
+
       img{
         width: 174px;
         height: 242px;
         z-index: 2;
-
+        /* 📔 */
         @include respond(md){
           position: absolute;
           width: 349px;
@@ -66,28 +90,39 @@ body{
           border: 0;
           z-index: -2;
         }
+        /* 💻 */
+        @include respond(lg){
+          width: 445px;
+          height: 618px;
+          top: 141px;
+        }
       }
     }
   }
-
-  
 }
+
 
 .hero{
   @include respond(md){
     display: flex;
     max-width: 100dvw;
     width: 100dvw;
+    /* 💻 */
+    @include respond(lg){
+      max-width: 1110px;
+    }
   }
-  .hero__content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 25px;
 
+
+  .hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    /* 📔 */
     @include respond(md){
       max-width: 445px;
       text-align: left;
@@ -96,17 +131,32 @@ body{
       align-items: flex-start;
       justify-content: left;
     }
+    /* 💻 */
+    @include respond(lg){
+      padding: 0;
+    }
 
     h1{
       margin-bottom: 16px;
+
       .tablet-only{
         display: none;
       }
+      /* 📔 */
       @include respond(md){
         margin-top: 40px;
         margin-bottom: 60px;
         .tablet-only{
           display: inline;
+        }
+      }
+      
+      /* 💻 */
+      @include respond(lg){
+        margin-top: 100px;
+        width: 714px;
+        .tablet-only{
+          display: none;
         }
       }
     }
@@ -115,56 +165,56 @@ body{
       @include respond(md){
         margin-bottom: 34px;
       }
+      /* 💻 */
+      @include respond(lg){
+        margin-top: 16px;
+        width: 445px;
+        font-size: 18px;
+        margin-bottom: 70px;
+      }
     }
 
     span{
       text-decoration-line: underline;
       text-decoration-color: $c-accent;
       text-underline-offset: 8px;
-
+      /* 📔 */
       @include respond(md){
         text-underline-offset: 15px;
+      }
+      /* 💻 */
+      @include respond(lg){
+        text-underline-offset: 18px;
+        text-decoration-thickness: 3px;
       }
     }
   }
 }
 
 
-
-.projects__grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  margin: 0 auto;
-  padding: 0 16px;
-  max-width: 500px;
-
-  @include respond(md){
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    max-width: 700px;
-  }
-
-  @include respond(lg){
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 77%;
-  }
-}
-
-
 .skills{
   padding: 0px 16px;
+  /* 💻 */
+  @include respond(lg){
+    max-width: 1110px;
+    padding: 0;
+  }
 
   &__decoration{
     margin-top: 80px;
     margin-bottom: 40px;
     border-top: 1px solid $c-ink;
     width: 95dvw;
+    /* 💻 */
+    @include respond(lg){
+      max-width: 1110px;
+      margin-top: 260px;
+    }
   }
 
   &__decoration__2{
     margin-top: 40px;
+    /* 📔 */
     @include respond(md){
       display: none;
     }
@@ -178,6 +228,7 @@ body{
     grid-template-columns: 1fr;
     margin-top: 20px;
     gap: 24px;
+    /* 📔 */
     @include respond(md){
       grid-template-columns: repeat(2, 1fr);
       gap: 52px;
@@ -185,21 +236,33 @@ body{
       margin: 0 auto;
       padding: 0 16px;
     }
+    /* 💻 */
+    @include respond(lg){
+      grid-template-columns: repeat(3, 1fr);
+      gap: 58px;
+      padding: 0;
+      margin: 0 auto;
+      padding: 0 0px;
+    }
 
     li{
       list-style: none;
       text-align: center;
+      /* 📔 */
       @include respond(md){
         text-align: left;
       }
+
       h3{
         margin: 0px;
+        /* 📔 */
         @include respond(md){
           font-size: 48px;
           line-height: 56px;
           letter-spacing: -1.5px;
         }
       }
+
       p{
         margin: 0;
         margin-top: 1px;
@@ -211,7 +274,10 @@ body{
   }
 }
 
+
 /* === Projects in /components/_projects === */
+
+/* === Contact in /components/_contact === */
 
 
 

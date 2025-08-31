@@ -10,28 +10,54 @@
   background: linear-gradient(0deg, transparent 0%, $c-muted 100%);
   padding: 60px 16px 60px 16px;
   width: 100%;
+/* 💻 */
+  @include respond(lg){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__text{
     text-align: center;
     margin-bottom: 40px;
+  /* 📔 */
+    @include respond(md){
+      width: 445px;
+    }
+  /* 💻 */
+    @include respond(lg){
+      padding-left: 160px;
+      text-align: left;
+    }
 
     h2{
       margin: 0px;
       margin-bottom: 20px;
+    /* 💻 */
+      @include respond(lg){
+        margin-bottom: 36px;
+      }
     }
 
     p{
       margin: 0;
       width: 343px;
+    /* 📔 */
       @include respond(md){
         width: 445px;
       }
     }
   }
+
   .contact__form{
     width: 90%;
+    /* 📔 */
       @include respond(md){
         width: 445px;
+      }
+    /* 💻 */
+      @include respond(lg){
+        padding-right: 160px;
       }
   }
 
@@ -45,12 +71,11 @@
     width: 95%;
     color: $c-ink;
     font-size: 16px;
-
     &::placeholder{
       font-size: 16px;
-
     }
   }
+
   textarea:nth-last-of-type(1){
     padding: 32px 16px 80px 12px;
   }
@@ -71,7 +96,7 @@
 
   /* Estado correcto */
   input.success, textarea.success {
-    border-bottom: 2px solid #4EE1A0;
+    border-bottom: 2px solid $c-accent;
   }
 }
 
@@ -83,5 +108,4 @@
     margin-top: 32px;
     margin-left: auto;
   }
-
 }

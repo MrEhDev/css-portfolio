@@ -15,16 +15,19 @@ body {
   font-size: 40px;
   line-height: 40px;
   font-weight: 700;
+/* 📔 */
   @include respond(md) {
     font-size: 72px;
     line-height: 72px;
     letter-spacing: -2.05px;
   }
+/* 💻 */
   @include respond(lg) {
     font-size: 88px;
     line-height: 88px;
   }
 }
+
 
 .h-m {
   font-family: $font;
@@ -34,10 +37,12 @@ body {
   font-weight: 700;
 /*   text-transform: uppercase;
  */
+/* 📔 */
   @include respond(md) {
     font-size: 24px;
   }
 }
+
 
 .h-s{
   font-family: $font;
@@ -48,14 +53,15 @@ body {
   text-transform: uppercase;
 }
 
+
 .body {
   font-family: $font;
   color: $c-ink;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
-  @include respond(lg) {
+/*  @include respond(lg) {
     font-size: 22px;
     line-height: 32px;
-  }
+  } */
 }
